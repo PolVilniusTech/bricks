@@ -6,7 +6,7 @@
 	if (isset($_POST["passwd"])) { $_SESSION['passwd'] = $_POST["passwd"]; }
 	if(isset($_POST['submit']))  {
 	$username=$_POST['username'];
-	$pwd=$_POST['passwd'];
+	$pwd=md5($_POST['passwd']);
 	$sql="SELECT * FROM users WHERE name='$username' and password='$pwd'";
 	$result=mysqli_query($con,$sql);
 	$count=mysqli_num_rows($result);
