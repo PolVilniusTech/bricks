@@ -26,11 +26,12 @@
 		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" /></a><br/>
 		<p>
 			<?php
-				$valid_file_extensions = array(".jpg", ".jpeg", ".png");
+				$valid_file_extensions = array("jpg", "jpeg", "png");
 				if(isset($_POST['upload'])) {
-					$filename =  $_FILES['userfile']['name'];
+					$file = pathinfo(basename($_FILES['userfile']['name']));
 					$img_type = $_FILES['userfile']['type'];
 					$destination = 'uploads/' . $_FILES['userfile']['name'];
+					//if ((($img_type == 'image/png') && in_array($file['extension'], $valid_file_extensions)) || (($img_type == 'image/jpeg') && in_array($file['extension'], $valid_file_extensions))) 
 					if (($img_type == 'image/png') || ($img_type == 'image/jpeg')  ) {
 						if (move_uploaded_file($_FILES['userfile']['tmp_name'],$destination)) {
 							echo "<div class=\"alert-box success\">Upload succesful: <a href='$destination'>here</a><a href=\"\" class=\"close\">&times;</a></div>";
