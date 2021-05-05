@@ -25,7 +25,7 @@
 <body>
 <div class="row">
 	<div class="four columns centered">
-		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" /></a><br/><br/>
+		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><br/><br/>
 		<?php
 			$dir = dirname( dirname(__FILE__) );
 			if(@include_once($dir . '/LocalSettings.php')) 
