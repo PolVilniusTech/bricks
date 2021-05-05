@@ -38,7 +38,7 @@
 <body>
 <div class="row">
 	<div class="four columns centered">
-		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Bricks Main Page"/></a><br/>
+		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><br/>
 			<p>
 			
 				<?php 
