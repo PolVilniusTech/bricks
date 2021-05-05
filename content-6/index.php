@@ -33,7 +33,7 @@
 <body>
 <div class="row">
 	<div class="four columns centered">
-		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" /></a><p>
+		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><p>
 		<fieldset>
 			<legend>Details</legend>
 				<?php 
