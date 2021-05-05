@@ -32,7 +32,7 @@ header( 'Location: config/' ) ;
 
   <div class="row">
     <div class="three columns">
-      <h1><a href="index.php"><img src="images/bricks.jpg" /></a></h1>
+      <h1><a href="index.php"><img src="images/bricks.jpg" alt="Bricks Main Page"/></a></h1>
     </div>
     <div class="nine columns">
       <ul class="nav-bar right">
@@ -58,7 +58,7 @@ header( 'Location: config/' ) ;
 
   <div class="row">
     <div class="twelve columns">
-      <a href="http://www.flickr.com/photos/sprengben/4315145017/" target="_blank"><img src="images/123.png" /></a>
+      <a href="http://www.flickr.com/photos/sprengben/4315145017/" target="_blank"><img src="images/123.png" alt="Bricks Home Background"/></a>
     </div>
   </div>
   
@@ -86,7 +86,7 @@ header( 'Location: config/' ) ;
           <p><a href="http://sechow.com/bricks/" target="_blank">OWASP Bricks</p>
         </div>
         <div class="right">
-           <a href="http://www.facebook.com/OWASPBricks" target="_blank"><img src="images/Facebook.png"/></a>&nbsp;<a href="https://twitter.com/OWASPBricks" target="_blank"><img src="images/Twitter.png"/></a>&nbsp;<a href="https://sourceforge.net/p/owaspbricks/" target="_blank"><img src="images/Sourceforge.png"/></a>&nbsp;<a href="https://www.owasp.org/index.php/OWASP_Bricks" target="_blank"><img src="images/owasp.png"/></a>&nbsp;<a href="http://gplus.to/OWASPBricks" target="_blank"><img src="images/Google+.png"/></a>&nbsp;<a href="https://www.youtube.com/OWASPBricks" target="_blank"><img src="images/YouTube.png"/></a>&nbsp;<a href="http://owaspbricks.blogspot.com/" target="_blank"><img src="images/Blogger.png"/></a>
+           <a href="http://www.facebook.com/OWASPBricks" target="_blank"><img src="images/Facebook.png" alt="Social Media 1"/></a>&nbsp;<a href="https://twitter.com/OWASPBricks" target="_blank"><img src="images/Twitter.png" alt="Social Media 2"/></a>&nbsp;<a href="https://sourceforge.net/p/owaspbricks/" target="_blank"><img src="images/Sourceforge.png" alt="Social Media 3"/></a>&nbsp;<a href="https://www.owasp.org/index.php/OWASP_Bricks" target="_blank"><img src="images/owasp.png" alt="Social Media 4"/></a>&nbsp;<a href="http://gplus.to/OWASPBricks" target="_blank"><img src="images/Google+.png" alt="Social Media 5"/></a>&nbsp;<a href="https://www.youtube.com/OWASPBricks" target="_blank"><img src="images/YouTube.png" alt="Social Media 6"/></a>&nbsp;<a href="http://owaspbricks.blogspot.com/" target="_blank"><img src="images/Blogger.png" alt="Social Media 7"/></a>
 		</div>
       </div>
     </div>
