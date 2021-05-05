@@ -37,7 +37,7 @@
 <body>
 <div class="row">
 	<div class="four columns centered">
-		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" /></a><br/><br/>
+		<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><br/><br/>
 		<form method="POST" action="index.php" enctype="application/x-www-form-urlencoded" onsubmit="return onSubmitOfLoginForm(this);"	id="idLoginForm">
 			<fieldset>
 				<legend>Login</legend>
