@@ -54,15 +54,15 @@
 				echo $sql; 
 				echo '<a href="" class="close">&times;</a></div></div>';			
 			} 
-      if($showhint === true) { 
+      			if($showhint === true) { 
 				echo '<p>&nbsp;</p>';
-        echo '<div class="eight columns centered"><div class="alert-box secondary">Hint: ';
+        			echo '<div class="eight columns centered"><div class="alert-box secondary">Hint: ';
 				echo 'Does our database allows to contain duplicate names of Users?'; 
 				echo '<a href="" class="close">&times;</a></div></div>';			
 			} 
-      if($showhint === true) { 
+      			if($showhint === true) { 
 				echo '<p>&nbsp;</p>';
-        echo '<div class="eight columns centered"><div class="alert-box secondary">Hint: ';
+        			echo '<div class="eight columns centered"><div class="alert-box secondary">Hint: ';
 				echo 'Does MD5 fit for password protection?'; 
 				echo '<a href="" class="close">&times;</a></div></div>';			
 			} 
