@@ -32,7 +32,7 @@ header( 'Location: config/' ) ;
 
   <div class="row">
     <div class="three columns">
-      <h1><a href="index.php"><img src="images/bricks.jpg" alt="Bricks Main Page"/></a></h1>
+      <h1><a href="index.php"><img src="images/bricks.jpg" alt="Main Bricks Page"/></a></h1>
     </div>
     <div class="nine columns">
       <ul class="nav-bar right">
