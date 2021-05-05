@@ -55,7 +55,7 @@
 <body>
 	<div class="row">
 		<div class="four columns centered">
-			<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" /></a><br/>		
+			<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><br/>		
 			<?php
 				if ($page == "login") { ?><br/>
 					<form method="post" action="<?php echo $_SERVER["SCRIPT_NAME"]; ?>">
