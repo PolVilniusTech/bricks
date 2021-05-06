@@ -1,0 +1,8 @@
+Contact: mailto:security@example.com
+Contact: tel:+000000000
+Expires: Sun, 1 Jan 2023 00:00 +0300
+Encryption: http://example.com/public_certificate.html
+Acknowledgments: http://example.com/customer_service/responsible_disclosure.html
+Preferred-Languages: en, es, ru, local
+Policy: http://example.com/responsible_disclosure_policy.html
+Hiring: http://local-labor-exchange.local/example.com
