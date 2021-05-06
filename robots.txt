@@ -1,0 +1,21 @@
+User-agent: Baidu
+Disallow: /not_fit_for_company_one/
+
+User-agent: Bing
+Disallow: /not_fit_for_company_two/
+
+User-agent: Googlebot
+Disallow: /not_fit_for_company_three/
+
+User-agent: Yahoo
+Disallow: /not_fit_for_company_four/
+
+User-agent: Yandex
+Disallow: /not_fit_for_company_five/
+
+User-agent: eSearch
+Disallow: /not_fit_for_eu/
+
+User-agent: *
+Disallow: /admin/		    #Does it's good place for such info?
+Disallow: /copyright/
