@@ -16,7 +16,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Bricks Content Page #1</title>  
+  <title>Bricks Content Page #6</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="../stylesheets/foundation.css">
