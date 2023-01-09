@@ -2,8 +2,8 @@
 	require_once(dirname(dirname(__FILE__)) . '/includes/MySQLHandler.php');
 	
 	session_start();
-	if (isset($_POST["username"])) { $_SESSION['username'] = $_POST["username"]; }
-	if (isset($_POST["passwd"])) { $_SESSION['passwd'] = $_POST["passwd"]; }
+	global $page;
+
 	if(isset($_POST['submit']))  {
 	$username=$_POST['username'];
 	$pwd=md5($_POST['passwd']);
@@ -12,22 +12,31 @@
 	$count=mysqli_num_rows($result);
 	if($count>0){
 		$_SESSION['valid'] = "1";
-	} 	} else {
-		$_SESSION['valid'] = "0";
-		if ($_GET["p"] !== "login") { header("Location: index.php?p=login"); }
+		header("Location: index.php?p=index");
+		exit();
 	}
-	global $page; $page = "index";
+	$_SESSION['valid'] = "0";
+	header("Location: index.php?p=incorrect");
+	exit();
+	} else {
+		$page = "index";
+		if(!isset($_SESSION['valid'])) { $_SESSION['valid'] = "0"; $page = "login"; }
+	}
+	
 	if (isset($_GET["p"])) {
 		// redirect on invalid page attempts
 		if (!in_array(strtolower($_GET["p"]), array(
-			"index","login","logout"
+			"incorrect", "index", "login", "logout"
 		))) {
+			$_SESSION['valid'] = "0"; session_destroy();
 			header("Location: index.php");
-			exit("Invalid parameter. <a href='index.php'>Continue</a>.");
+			exit();
 		}
-		$page = $_GET["p"];
-		if ($_GET["p"] == "login") {$pagetitle = "Log In"; }
-	if ($_GET["p"] == "logout") {$pagetitle = "Log Out"; $_SESSION['valid'] = "0"; session_destroy(); }
+		
+		if ($_GET["p"] == "incorrect") { $page = "incorrect"; $pagetitle = "Error"; }
+		if ($_GET["p"] == "index") { $page = "index"; $pagetitle = "Welcome"; }
+		if ($_GET["p"] == "login") { $page = "login"; $pagetitle = "Log In"; $_SESSION['valid'] = "0"; }
+		if ($_GET["p"] == "logout") { $page = "logout"; $pagetitle = "Log Out"; $_SESSION['valid'] = "0"; session_destroy(); }
 	}
 	
 ?><!DOCTYPE html>
@@ -41,8 +50,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' html5shiv.googlecode.com; connect-src 'self'; img-src 'self'; style-src 'self'; font-src fonts.googleapis.com; object-src 'self'; media-src 'self'; frame-src 'self'; base-uri 'self'; form-action 'self'; report-uri /some-report-uri;" />
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
-  <title>Bricks Login Form #6</title>  
-  <!-- Included CSS Files (Uncompressed) -->
+  <title>Bricks Login Form #7</title>
+  <!-- Included CSS Files (Uncompressed) TODO: harry@getmantra.com -->
   <!--
   <link rel="stylesheet" href="../stylesheets/foundation.css">
   -->  
@@ -60,25 +69,25 @@
 		<div class="four columns centered">
 			<br/><br/><a href="../index.php"><img src="../images/bricks.jpg" alt="Main Bricks Page"/></a><br/>		
 			<?php
-				if ($page == "login") { ?><br/>
-					<form method="post" action="<?php echo $_SERVER["SCRIPT_NAME"]; ?>">
-						<fieldset>
+			if ($page == "login") { ?><br/>
+				<form method="post" action="<?php echo $_SERVER["SCRIPT_NAME"]; ?>">
+					<fieldset>
 						<legend>Login</legend>
-							<p><label for="username">Username:</label>
-							<input type="text" name="username" id="username" 
-							class="textinput" /></p>
-							<p><label for="password">Password:</label><input 
-							type="password" name="passwd" id="passwd" 
-							class="textinput" /></p>
-							<p><input type="submit" name="submit" class="button" value="Enter" /></p>
-						</fieldset>
-					</form>
+						<p><label for="username">Username:</label>
+						<input type="text" name="username" id="username" class="textinput" /></p>
+						<p><label for="password">Password:</label><input type="password" name="passwd" id="passwd" class="textinput" /></p>
+						<p><input type="submit" name="submit" class="button" value="Enter" /></p>
+					</fieldset>
+				</form>
 			<?php };
 			if ($page == "index") { ?><br/>
-				<p>You are succesfully logged in. | <a  class="small button" href="index.php?p=logout">Log Out</a></p>		
+				<p>You are succesfully logged in the Team Account. | <a  class="small button" href="index.php?p=logout">Log Out</a></p>
 			<?php };
+			if ($page == "incorrect") { ?><br/>
+				<p>You input wrong Username and Password.<a  class="small button" href="index.php?p=login">Try Again</a></p>
+			<?php }; 
 			if ($page == "logout") { ?><br/>
-				<p>You have successfully been logged out and will be redirected shortly to the login page.</p>
+				<p>You have successfully been logged out from the Account.<a  class="small button" href="index.php?p=login">Log In</a></p> 
 			<?php }; ?>
 		</div>
 	</div>
