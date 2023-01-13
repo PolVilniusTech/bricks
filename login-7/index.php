@@ -20,7 +20,8 @@
 	exit();
 	} else {
 		$page = "index";
-		if(!isset($_SESSION['valid'])) { $_SESSION['valid'] = "0"; $page = "login"; }
+		if(!isset($_SESSION['valid'])) { $_SESSION['valid'] = "0"; $page = "login"; $pagetitle = "Log In"; }
+		if(isset($_SESSION['valid']) && $_SESSION['valid'] == "0") { $page = "login"; $pagetitle = "Log In"; }
 	}
 	
 	if (isset($_GET["p"])) {
@@ -74,8 +75,8 @@
 					<fieldset>
 						<legend>Login</legend>
 						<p><label for="username">Username:</label>
-						<input type="text" name="username" id="username" class="textinput" /></p>
-						<p><label for="password">Password:</label><input type="password" name="passwd" id="passwd" class="textinput" /></p>
+						<input type="text" name="username" id="username" 							class="textinput" /></p>
+						<p><label for="password">Password:</label><input 							type="password" name="passwd" id="passwd" class="textinput" /></p>
 						<p><input type="submit" name="submit" class="button" value="Enter" /></p>
 					</fieldset>
 				</form>
