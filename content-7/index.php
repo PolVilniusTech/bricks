@@ -69,7 +69,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' html5shiv.googlecode.com; connect-src 'self'; img-src 'self' upload.wikimedia.org; style-src 'self'; font-src fonts.googleapis.com; object-src 'self'; media-src 'self'; frame-src 'self'; base-uri 'self'; form-action 'self'; report-uri /some-report-uri;" />
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
-  <title>Bricks Content Page #6</title>  
+  <title>Bricks Content Page #7</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="../stylesheets/foundation.css">
