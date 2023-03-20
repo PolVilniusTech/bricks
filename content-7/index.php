@@ -1,5 +1,5 @@
 <?php
-	ini_set( 'user_agent', 'Scraper/0.3 (http://www.issauga.lt) PHP/generic/7.4.30' );
+	ini_set( 'user_agent', 'Scraper/0.3 (http://www.websource.lt) PHP/generic/X.Y.Z' );
 	ini_set( 'allow_url_fopen', 1 );
 	header("Cache-Control: no-cache, must-revalidate");
 	header("Expires: " . date('D, j M Y h:i:s') . " GMT");
