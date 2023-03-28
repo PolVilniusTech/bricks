@@ -6,7 +6,12 @@
 	$pwd=$_POST['passwd'];
 	$sql="SELECT * FROM users WHERE name='$username' and password='$pwd'";
 	$result=mysqli_query($con,$sql);
+	if(is_object($result)) {
 	$count=mysqli_num_rows($result);
+	}
+	else {
+	$count=0;
+	}
 		$sSuccessMsg = ($count>0?
 			"<div class=\"alert-box success\">Succesfully logged in.<a href=\"\" class=\"close\">&times;</a></div>":
 			"<div class=\"alert-box alert\">Wrong user name or password.<a href=\"\" class=\"close\">&times;</a></div>");
