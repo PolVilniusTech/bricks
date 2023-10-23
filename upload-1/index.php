@@ -31,7 +31,8 @@
 		<p>
 			<?php
 				if(isset($_POST['upload'])) {
-					$destination = 'uploads/' . $_FILES['userfile']['name'];
+					$filename = basename($_FILES['userfile']['name']);
+					$destination = 'uploads/' . $filename;
 					if (move_uploaded_file($_FILES['userfile']['tmp_name'], $destination)) {
 						echo "<div class=\"alert-box success\">Upload succesful: <a href='$destination'>here</a><a href=\"\" class=\"close\">&times;</a></div>";
 						}
