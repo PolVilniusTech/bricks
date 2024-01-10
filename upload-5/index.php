@@ -42,7 +42,7 @@
 			<form enctype="multipart/form-data" action="index.php" method="POST">
 				<fieldset>
 					<legend>Upload</legend>
-					<input name="userfile" accept="image/*" class="small button" type="file" /><br/><br/>
+					<input name="userfile" accept="image/*" class="small button" type="file" required><br/><br/>
 					<div id="main">
 					<input type="submit" class="small button" name="upload" value="Upload" /><br/><br/>
 					</div>				
