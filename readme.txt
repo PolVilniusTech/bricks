@@ -1,3 +1,8 @@
+==Customization==
+Google Translate function included
+PHP and SQL connection code updated
+Try it out with PHP8
+
 ==Original Lead Author==
 https://github.com/Abhi-M
 OWASP Bricks - 2.2 Tuivai
