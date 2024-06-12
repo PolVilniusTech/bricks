@@ -64,11 +64,12 @@ header( 'Location: config/' ) ;
   
   <div class="row">
     <div class="twelve columns">
-      <h4>Welcome to Bricks!</h4>
-	  <p>Bricks is a web application security learning platform built on <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a>. The project focuses on variations of commonly seen application security issues. Each 'Brick' has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to '<a href="http://owaspbricks.blogspot.com/2013/02/break-bricks.html">Break the Bricks</a>' and thus learn the various aspects of web application security.
-	  </p>
-	  <p>Bricks is a completely free and open source project brought to you by <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a>. The <a href="docs/">complete documentation</a> and <a href="https://www.youtube.com/OWASPBricks">instruction videos</a> can also be accessed or downloaded for free. Bricks are classified into three different sections: <a href="docs/login-pages.html">login pages</a>, <a href="docs/file-upload-pages.html">file upload pages</a> and <a href="docs/content-pages.html">content pages</a>.
-	  </p>
+	<h4>Welcome to Bricks!</h4>
+	<p><div id="google_translate_element"></div></p>
+	<p>Bricks is a web application security learning platform built on <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a>. The project focuses on variations of commonly seen application security issues. Each 'Brick' has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to '<a href="http://owaspbricks.blogspot.com/2013/02/break-bricks.html">Break the Bricks</a>' and thus learn the various aspects of web application security.
+	</p>
+	<p>Bricks is a completely free and open source project brought to you by <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a>. The <a href="docs/">complete documentation</a> and <a href="https://www.youtube.com/OWASPBricks">instruction videos</a> can also be accessed or downloaded for free. Bricks are classified into three different sections: <a href="docs/login-pages.html">login pages</a>, <a href="docs/file-upload-pages.html">file upload pages</a> and <a href="docs/content-pages.html">content pages</a>.
+	</p>
     </div>
   </div>
 
@@ -134,7 +135,12 @@ header( 'Location: config/' ) ;
   <script src="javascripts/jquery.foundation.magellan.js"></script>
   
   -->
+
+  <!-- Translation -->
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
+  <script src="javascripts/translation.js"></script>
+
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
   <script src="javascripts/foundation.min.js"></script>
