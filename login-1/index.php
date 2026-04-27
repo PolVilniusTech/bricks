@@ -19,7 +19,7 @@
 		$sSuccessMsg = ($count>0?
 			"<div class=\"alert-box success\">Succesfully logged in.<a href=\"\" class=\"close\">&times;</a></div>":
 			"<div class=\"alert-box alert\">Wrong user name or password.<a href=\"\" class=\"close\">&times;</a></div>");
-		if($malformed) { $sSuccessMsg = $sSuccessMsg . "<div class=\"alert-box alert\">Malformed SQL.<a href=\"\" class=\"close\">&times;</a></div>" }
+		if($malformed) { $sSuccessMsg = $sSuccessMsg . "<div class=\"alert-box alert\">Malformed SQL.<a href=\"\" class=\"close\">&times;</a></div>"; }
 	}
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
